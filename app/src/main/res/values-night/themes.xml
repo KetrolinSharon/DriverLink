@@ -1,7 +1,9 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Driverlinkexno2c" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+<resources>
+    <style name="Theme.DriverLink" parent="Theme.Material3.DayNight">
+
+        <item name="android:windowBackground">@color/dark_green</item>
+        <item name="colorSurface">@color/dark_green</item>
+        <item name="colorPrimary">@color/dark_green</item>
+
     </style>
 </resources>

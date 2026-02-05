@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login with mobile number"
-            android:background="@drawable/bg_green_field"
+            android:background="@color/white"
             android:textColor="#2F5D2F"/>
 
         <!-- OR Divider -->

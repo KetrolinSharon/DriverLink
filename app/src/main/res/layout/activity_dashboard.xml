@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,6 +25,7 @@
             android:gravity="center"
             android:padding="16dp"
             android:background="#A8D080" />
+
 
         <!-- DRIVER INFO -->
         <LinearLayout
@@ -88,7 +90,9 @@
                 android:textStyle="bold"
                 android:textColor="#2E5E1A" />
 
+            <!-- INFO ICON -->
             <TextView
+                android:id="@+id/infoIcon"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:text="!"
@@ -97,6 +101,7 @@
                 android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:background="@drawable/card_bg" />
+
         </LinearLayout>
 
         <!-- GRID -->
@@ -182,7 +187,9 @@
             </LinearLayout>
 
             <!-- SOS -->
+            <!-- SOS CARD -->
             <LinearLayout
+                android:id="@+id/sosCard"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
@@ -190,7 +197,9 @@
                 android:background="@drawable/sos_bg"
                 android:gravity="center">
 
-                <TextView
+
+
+            <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SOS"
@@ -200,6 +209,7 @@
             </LinearLayout>
 
         </GridLayout>
+
         <!-- BOTTOM SUMMARY CARD -->
         <LinearLayout
             android:layout_width="match_parent"

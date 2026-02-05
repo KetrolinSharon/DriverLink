@@ -1,9 +1,28 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Driverlinkexno2c" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+
+    <style name="Theme.DriverLink" parent="Theme.Material3.DayNight">
+
+        <!-- Activity background -->
+        <item name="android:windowBackground">@color/dark_green</item>
+
+        <!-- Popup + Dialog background -->
+        <item name="colorSurface">@color/dark_green</item>
+
+        <!-- Toolbar / menu -->
+        <item name="colorPrimary">@color/dark_green</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <item name="popupMenuStyle">@style/CustomPopupMenu</item>
+        <item name="materialAlertDialogTheme">@style/CustomDialogTheme</item>
+
+    </style>
+    <style name="CustomPopupMenu" parent="Widget.Material3.PopupMenu">
+        <item name="android:popupBackground">@color/dark_green</item>
     </style>
 
-    <style name="Theme.Driverlinkexno2c" parent="Base.Theme.Driverlinkexno2c" />
+    <style name="CustomDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/dark_green</item>
+    </style>
+
+
 </resources>

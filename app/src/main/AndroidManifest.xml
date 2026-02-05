@@ -12,16 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DriverLink">
         <activity
-            android:name=".DashboardActivity"
-            android:theme="@style/Theme.DriverLink"
+            android:name=".AuthChoiceActivity"
             android:exported="false" />
+        <activity
+            android:name=".homeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthChoice"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DriverLink" />
         <activity
             android:name=".SignupActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/Theme.DriverLink"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.DriverLink">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

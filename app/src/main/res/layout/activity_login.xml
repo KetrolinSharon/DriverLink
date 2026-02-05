@@ -8,17 +8,13 @@
     android:gravity="center"
     android:padding="16dp">
 
-    <!-- App Title -->
-
-    <!-- White Card -->
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="DriverLink"
-        android:textColor="#2F5D2F"
-        android:textSize="28sp"
+        android:textColor="@color/dark_green"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -34,7 +30,7 @@
             android:layout_height="wrap_content"
             android:text="Login with mobile number"
             android:background="@color/white"
-            android:textColor="#2F5D2F"/>
+            android:textColor="@color/white"/>
 
         <!-- OR Divider -->
         <TextView

@@ -1,80 +1,86 @@
-<ScrollView
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:orientation="vertical"
+    android:background="#B7D99A"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="DriverLink"
+        android:textColor="@color/dark_green"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:background="@drawable/bg_white_card"
+        android:padding="20dp">
 
+        <!-- Login with mobile -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login with mobile number"
+            android:background="@color/white"
+            android:textColor="@color/white"/>
+
+        <!-- OR Divider -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Signup"
-            android:textSize="22sp"
-            android:textStyle="bold"/>
+            android:text="OR"
+            android:layout_gravity="center"
+            android:layout_marginVertical="12dp"
+            android:textColor="#2F5D2F"/>
 
-        <!-- Personal Details -->
+        <!-- Email -->
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Full Name"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Mobile Number"
-            android:inputType="phone"/>
-
-        <EditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:inputType="textEmailAddress"/>
+            android:background="@drawable/bg_green_field"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
 
-        <!-- Vehicle Details -->
+        <!-- Password -->
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Vehicle Number"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Vehicle Type"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Seating Capacity"
-            android:inputType="number"/>
-
-        <!-- Work Details -->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Service Type"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Operating Area"/>
-
-        <!-- Security -->
-        <EditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:background="@drawable/bg_green_field"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
+        <!-- Login Button -->
         <Button
-            android:id="@+id/signupBtn"
-            android:layout_width="match_parent"
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Signup"/>
+            android:text="Login"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dark_green_btn"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Forgot password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget your password?"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:textColor="#2F5D2F"/>
 
     </LinearLayout>
-</ScrollView>
+
+</LinearLayout>

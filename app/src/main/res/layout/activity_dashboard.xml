@@ -112,7 +112,9 @@
             android:padding="16dp">
 
             <!-- Trip -->
+            <!-- Trip -->
             <LinearLayout
+                android:id="@+id/todayTripCard"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
@@ -135,6 +137,7 @@
                     android:textColor="#FFFFFF"
                     android:layout_marginTop="10dp" />
             </LinearLayout>
+
 
             <!-- Income -->
             <LinearLayout

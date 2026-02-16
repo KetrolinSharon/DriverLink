@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B7D99A"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Booking"
+        android:textColor="#2F5D2F"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- White Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_white_card"
+        android:padding="20dp">
+
+        <!-- Customer Name -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer Name"
+            android:background="@drawable/bg_green_field"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Pickup Location -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pickup Location"
+            android:background="@drawable/bg_green_field"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Drop Location -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Drop Location"
+            android:background="@drawable/bg_green_field"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Travel Date (DatePicker) -->
+        <EditText
+            android:id="@+id/travelDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Travel Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/bg_green_field"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+        <!-- Travel Time -->
+        <EditText
+            android:id="@+id/etTravelTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Travel Time"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/bg_green_field"
+            android:padding="12dp"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveBookingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Booking"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dark_green_btn"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>

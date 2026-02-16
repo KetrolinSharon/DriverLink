@@ -8,10 +8,6 @@
     android:gravity="center"
     android:padding="16dp">
 
-    <!-- App Title -->
-
-    <!-- White Card -->
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,6 +71,15 @@
             android:layout_gravity="center"
             android:background="@drawable/bg_dark_green_btn"
             android:textColor="#FFFFFF"/>
+        <ProgressBar
+            android:id="@+id/loginProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"/>
+
 
         <!-- Forgot password -->
         <TextView
